@@ -17,27 +17,25 @@ The architecture uses:
 
 
 Traffic flows like this:
-```
 
 User → NGINX → (Blue or Green App)
 
 
 When a new version is ready, NGINX configuration can be updated to switch traffic to the new app (Blue → Green or vice versa) **without downtime**.
 
----
+
 
 ## ⚙️ Project Structure
 
 
-- **├──** docker-compose.yml
-- **├──** nginx.conf
+├── docker-compose.yml
+├──nginx.conf
 ├── templates/
 │ └── upstreams.conf.template
 ├── .env
 └── README.md
 
 
----
 
 ## 🧰 Prerequisites
 
@@ -47,7 +45,6 @@ Before you begin, ensure you have the following installed:
 - [Docker Compose](https://docs.docker.com/compose/)
 - Basic understanding of NGINX and container networking
 
----
 
 ## 🪜 Step-by-Step Setup
 
