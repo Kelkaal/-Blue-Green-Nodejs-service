@@ -1,4 +1,4 @@
-# 🧩 NGINX Blue-Green Deployment Setup (Docker Compose)
+#  NGINX Blue-Green Deployment Setup (Docker Compose)
 
 This repository demonstrates a **simple blue-green deployment** pattern using **NGINX** as a reverse proxy and **Docker Compose** to manage two versions (Blue and Green) of the same application.  
 
@@ -6,7 +6,7 @@ The setup ensures **zero downtime** during updates and supports fast rollback be
 
 ---
 
-## 📘 Overview
+##  Overview
 
 The architecture uses:
 
@@ -27,10 +27,10 @@ When a new version is ready, NGINX configuration can be updated to switch traffi
 ---
 
 ## ⚙️ Project Structure
-```
 
-├── docker-compose.yml
-├── nginx.conf
+
+- **├──** docker-compose.yml
+- **├──** nginx.conf
 ├── templates/
 │ └── upstreams.conf.template
 ├── .env
