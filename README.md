@@ -29,11 +29,11 @@ When a new version is ready, NGINX configuration can be updated to switch traffi
 
 
 - **├──** docker-compose.yml
-├──nginx.conf
-├── templates/
-│ └── upstreams.conf.template
-├── .env
-└── README.md
+- **├──** nginx.conf
+- **├──** templates/
+- **│ └──** upstreams.conf.template
+- **├──** .env
+- **└──** README.md
 
 
 
@@ -58,12 +58,13 @@ cd <your-repo>
 
 2. Configure Environment Variables
 Create a .env file in the project root (if it doesn't exist) and define:
+
 BLUE_IMAGE=yimikaade/wonderful:devops-stage-two
 GREEN_IMAGE=yimikaade/wonderful:devops-stage-two
 ACTIVE_POOL=blue
 RELEASE_ID_BLUE=blue-release-v1
 RELEASE_ID_GREEN=green-release-v1
-```
+
   This controls which container is active (ACTIVE_POOL=blue or ACTIVE_POOL=green).
 
 4. Set Up the NGINX Configuration
