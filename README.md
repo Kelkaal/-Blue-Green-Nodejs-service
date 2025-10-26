@@ -25,7 +25,7 @@ When a new version is ready, NGINX configuration can be updated to switch traffi
 
 
 
-## ⚙️ Project Structure
+##  Project Structure
 
 
 - **├──** docker-compose.yml
