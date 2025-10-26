@@ -4,7 +4,7 @@ This repository demonstrates a **simple blue-green deployment** pattern using **
 
 The setup ensures **zero downtime** during updates and supports fast rollback between releases.
 
----
+
 
 ##  Overview
 
@@ -28,7 +28,7 @@ When a new version is ready, NGINX configuration can be updated to switch traffi
 ## ⚙️ Project Structure
 
 
-├── docker-compose.yml
+- **├──** docker-compose.yml
 ├──nginx.conf
 ├── templates/
 │ └── upstreams.conf.template
