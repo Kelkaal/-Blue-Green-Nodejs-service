@@ -110,17 +110,17 @@ http {
 Run the following command:
 docker-compose up -d
 
-**-** This will start three containers:
+- **This** will start three containers:
 
-nginx (reverse proxy)
+- **nginx** (reverse proxy)
 
-app_blue (active backend)
+- **app_blue** (active backend)
 
-app_green (standby backend)
+- **app_green** (standby backend)
 
 You can verify the running containers with:
 
-docker ps
+- **docker ps**
 <img width="1182" height="128" alt="image" src="https://github.com/user-attachments/assets/2a4f2907-c4b8-44a5-91f4-4367c705c69f" />
 
 
