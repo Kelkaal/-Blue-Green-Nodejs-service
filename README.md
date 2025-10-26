@@ -18,7 +18,7 @@ The architecture uses:
 
 Traffic flows like this:
 
-User → NGINX → (Blue or Green App)
+## User → NGINX → (Blue or Green App)
 
 
 When a new version is ready, NGINX configuration can be updated to switch traffic to the new app (Blue → Green or vice versa) **without downtime**.
