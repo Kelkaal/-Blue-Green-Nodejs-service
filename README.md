@@ -71,6 +71,7 @@ Create a .env file in the project root (if it doesn't exist) and define:
 The NGINX configuration is composed of:
 
 nginx.conf
+
 events {
     worker_connections 1024;
 }
