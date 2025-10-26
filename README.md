@@ -73,6 +73,7 @@ This controls which container is active (ACTIVE_POOL=blue or ACTIVE_POOL=green).
 The NGINX configuration is composed of:
 nginx.conf
 
+```
 events {
     worker_connections 1024;
 }
@@ -101,6 +102,7 @@ http {
         }
     }
 }
+```
 
 
 # Build and Start Services
