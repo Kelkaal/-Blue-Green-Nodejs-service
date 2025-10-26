@@ -56,18 +56,18 @@ cd <your-repo>
 ```
 
 
-2. Configure Environment Variables
+2. ## Configure Environment Variables
 Create a .env file in the project root (if it doesn't exist) and define:
 
-BLUE_IMAGE=yimikaade/wonderful:devops-stage-two
-GREEN_IMAGE=yimikaade/wonderful:devops-stage-two
-ACTIVE_POOL=blue
-RELEASE_ID_BLUE=blue-release-v1
-RELEASE_ID_GREEN=green-release-v1
+- **BLUE_IMAG**E=yimikaade/wonderful:devops-stage-two
+- **GREEN_IMAGE**=yimikaade/wonderful:devops-stage-two
+- **ACTIVE_POOL**=blue
+- **RELEASE_ID_BLUE**=blue-release-v1
+- **RELEASE_ID_GREEN**=green-release-v1
 
   This controls which container is active (ACTIVE_POOL=blue or ACTIVE_POOL=green).
 
-4. Set Up the NGINX Configuration
+4. ## Set Up the NGINX Configuration
 The NGINX configuration is composed of:
 
 nginx.conf
@@ -99,15 +99,17 @@ http {
         }
     }
 }
-```
-templates/upstreams.conf.template
+
+## templates/upstreams.conf.template
 
 upstream active_backend {
     server app_blue:3000 max_fails=2 fail_timeout=5s;
     server app_green:3000 backup;
 }
 
+
 # Build and Start Services
+
 Run the following command:
 docker-compose up -d
 
