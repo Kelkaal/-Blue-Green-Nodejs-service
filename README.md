@@ -37,7 +37,7 @@ When a new version is ready, NGINX configuration can be updated to switch traffi
 
 
 
-## 🧰 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -46,7 +46,7 @@ Before you begin, ensure you have the following installed:
 - Basic understanding of NGINX and container networking
 
 
-## 🪜 Step-by-Step Setup
+##  Step-by-Step Setup
 
 ### 1️ Clone the Repository
 
@@ -56,7 +56,7 @@ cd <your-repo>
 ```
 
 
-2. ## Configure Environment Variables
+## 2 Configure Environment Variables
 Create a .env file in the project root (if it doesn't exist) and define:
 
 ```BASH
@@ -69,7 +69,7 @@ RELEASE_ID_GREEN=green-release-v1
 This controls which container is active (ACTIVE_POOL=blue or ACTIVE_POOL=green).
 
 
-4. ## Set Up the NGINX Configuration
+## Set Up the NGINX Configuration
 The NGINX configuration is composed of:
 nginx.conf
 
@@ -110,7 +110,7 @@ http {
 Run the following command:
 docker-compose up -d
 
-This will start three containers:
+**-** This will start three containers:
 
 nginx (reverse proxy)
 
